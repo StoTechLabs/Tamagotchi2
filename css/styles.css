@@ -1,0 +1,23 @@
+#Tamagotchi {
+  text-align: center;
+}
+
+.tamagotchi-buttons {
+  text-align: center;
+}
+
+#my-pets-name {
+  display: none;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+#tamagotchi-name {
+  text-align: center;
+  text-decoration: underline;
+}
+
+#life-status {
+  text-align: center;
+}

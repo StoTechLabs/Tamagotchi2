@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tamagotchi</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src = "js/jquery-1.11.1.js"></script>
+    <script src ="js/scripts.js"></script>
+  </head>
+  <body>
+    <div class = "container">
+      <h1 id="Tamagotchi">Tamagotchi</h1>
+      <div class = "row">
+        <div class = "col-md-4">
+          <div class= "form-group">
+            <form id="Tamagotchi">
+              <br>
+              <label for="pet-name"></label>
+              <input type="text" class="form-control" id="pet-name" placeholder="Enter your pet's name">
+              <br>
+              <button type="submit" class="btn">Submit</button>
+            </form>
+          </div>
+        </div>
+
+        <div class = "col-md-4">
+
+          <div>
+            <p id="tamagotchi-name">Your pet's name</p>
+            <h2 id="my-pets-name"><!-- empty div for printing pet's name --></h2>
+          </div>
+
+        </div>
+
+        <div class = "col-md-4">
+          <br>
+          <h2 id="life-status"></h2>
+          <!-- <h2 id="life-status-dead"></h2> -->
+        </div>
+      </div>
+
+      <div class = "row">
+        <div class = "col-md-4 tamagotchi-buttons">
+          <button type="button" class="btn-primary food-btn">Food</button>
+          <h3 id="food-display"></h3>
+        </div>
+
+        <div class="col-md-4 tamagotchi-buttons">
+          <button type="button" class="btn-info sleep-btn">Sleep</button>
+          <h3 id="sleep-display"></h3>
+        </div>
+
+        <div class="col-md-4 tamagotchi-buttons">
+          <button type="button" class="btn-danger activity-btn">Activity</button>
+          <h3 id="activity-display"></h3>
+        </div>
+      </div>
+
+
+    </div>
+  </body>
+</html>
