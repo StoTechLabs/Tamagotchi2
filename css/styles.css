@@ -21,3 +21,11 @@
 #life-status {
   text-align: center;
 }
+
+#chilling-hide {
+  display: none;
+}
+
+#dead-hide {
+  display: none;
+}

@@ -42,6 +42,7 @@ $(document).ready(function() {
   $("form#Tamagotchi").submit(function(event) {
     event.preventDefault();
 
+    $("#egg-hide").hide();
     $("#my-pets-name").show();
     var petName = $("input#pet-name").val();
     $("#my-pets-name").text(petName);
@@ -52,16 +53,20 @@ $(document).ready(function() {
     $("#food-display").text(myPet.foodLevel);
     $("#sleep-display").text(myPet.sleepLevel);
     $("#activity-display").text(myPet.activityLevel);
+    // $("#tamagotchi-div").prepend('<img id ="chilling" src="tamagotchi/css/tamagotchi-gifs/chilling.gif" />')
 
     var timeBegins = setInterval(function() {
       myPet.timePasses();
 
       if (myPet.isAlive() === true) {
         $("#life-status").text("is Alive.")
+        $("#chilling-hide").show()
       }
 
       if (myPet.isAlive() === false) {
         $("#life-status").text("is Dead.")
+        $("#chilling-hide").hide()
+        $("#dead-hide").show()
       }
     }, 800);
   });
